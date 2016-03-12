@@ -1,2 +1,0 @@
-# mongotron.io
-Mongotro Website
