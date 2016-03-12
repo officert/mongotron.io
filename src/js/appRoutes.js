@@ -11,6 +11,11 @@ angular.module('mongotronApp').config([
         url: '/',
         templateUrl: 'src/js/components/home/home.html',
         controller: 'homeCtrl'
+      })
+      .state('features', {
+        url: '/features',
+        templateUrl: 'src/js/components/features/features.html',
+        controller: 'featuresCtrl'
       });
   }
 ]);
