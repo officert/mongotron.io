@@ -39,28 +39,9 @@
   </div> -->
   <header ng-controller="headerCtrl" ng-include="'src/js/views/header.html'">
   </header>
-  <div ui-view>
-    
-  </div>
-  <div class="bottom-container">
-    <div class="container">
-      <footer id="footer">
-        <div id="disqus_thread"></div>
-        <script>
-          (function() { // DON'T EDIT BELOW THIS LINE
-            var d = document,
-              s = d.createElement('script');
-
-            s.src = '//mongotron.disqus.com/embed.js';
-
-            s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
-          })();
-        </script>
-        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-      </footer>
-    </div>
-  </div>
+  <div ui-view></div>
+  <footer ng-include="'src/js/views/footer.html'">
+  </footer>
   <div class="mobile-menu">
     <a id="hideMobileMenuBtn" href="#" class="mobile-nav-btn">
       <i class="fa fa-times"></i>

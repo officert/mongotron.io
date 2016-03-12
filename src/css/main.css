@@ -6846,6 +6846,14 @@ button.close {
 #home .home-hero .download .btn:first-child {
   margin-right: 15px;
 }
+#footer {
+  background: #161719;
+  padding: 20px 0;
+}
+#footer .container {
+  max-width: 970px;
+  margin: 0 auto;
+}
 /* --------------------------------- */
 body {
   overflow: auto !important;
@@ -6898,12 +6906,4 @@ body.show-mobile-menu .mobile-menu {
   border-left: none;
   border-right: none;
   background: #161719;
-}
-.bottom-container {
-  background: #161719;
-  padding: 20px 0;
-}
-.bottom-container .container {
-  max-width: 970px;
-  margin: 0 auto;
 }
