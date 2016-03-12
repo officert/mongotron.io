@@ -6724,6 +6724,18 @@ button.close {
     display: none !important;
   }
 }
+@font-face {
+  font-family: 'Avenir';
+  src: url('../fonts/AvenirNextLTPro-Regular.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Avenir Light';
+  src: url('../fonts/AvenirNextLTPro-UltLtCn.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Avenir Bold';
+  src: url('../fonts/AvenirNextLTPro-Bold.otf') format('opentype');
+}
 .font-family-light {
   font-family: 'Avenir Light';
 }
