@@ -23,15 +23,17 @@
       text-transform: uppercase;
       font-weight: bold;
       position: relative;
-      // left: 0;
       top: -5px;
-      // visibility: hidden;
     }
   }
   .main-nav {
     .mobile-nav-btn {
       display: none;
-      padding: 5px 10px;
+      color: white;
+      font-size: 25px;
+      position: relative;
+      right: 10px;
+      top: -5px;
     }
     @media (max-width: 560px) {
       .mobile-nav-btn {
@@ -56,6 +58,57 @@
             top: 0;
             border-radius: 20px;
             background: none;
+          }
+        }
+      }
+    }
+  }
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: darken(@gray, 5%);
+    display: none;
+    &.active {
+      display: block;
+    }
+    @media (min-width: 560px) {
+      display: none !important;
+    }
+    .mobile-nav-btn {
+      padding: 5px 10px;
+      position: absolute;
+      top: 16px;
+      right: 15px;
+      font-size: 30px;
+    }
+    ul {
+      position: relative;
+      top: 12%;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li {
+        a {
+          color: white;
+          display: block;
+          width: 100%;
+          text-align: center;
+          padding: 20px 0;
+          font-size: 30px;
+          border-radius: 0;
+          text-decoration: none;
+          background: darken(@gray, 5%);
+          border: 1px solid transparent;
+          border-left: none;
+          border-right: none;
+          &:hover {
+            border: 1px solid @blue;
+            border-left: none;
+            border-right: none;
+            background: @gray;
           }
         }
       }

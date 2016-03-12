@@ -6780,7 +6780,11 @@ button.close {
 }
 #header .main-nav .mobile-nav-btn {
   display: none;
-  padding: 5px 10px;
+  color: white;
+  font-size: 25px;
+  position: relative;
+  right: 10px;
+  top: -5px;
 }
 @media (max-width: 560px) {
   #header .main-nav .mobile-nav-btn {
@@ -6808,6 +6812,57 @@ button.close {
   top: 0;
   border-radius: 20px;
   background: none;
+}
+#header .mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #0a0b0b;
+  display: none;
+}
+#header .mobile-menu.active {
+  display: block;
+}
+@media (min-width: 560px) {
+  #header .mobile-menu {
+    display: none !important;
+  }
+}
+#header .mobile-menu .mobile-nav-btn {
+  padding: 5px 10px;
+  position: absolute;
+  top: 16px;
+  right: 15px;
+  font-size: 30px;
+}
+#header .mobile-menu ul {
+  position: relative;
+  top: 12%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#header .mobile-menu ul li a {
+  color: white;
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  border-radius: 0;
+  text-decoration: none;
+  background: #0a0b0b;
+  border: 1px solid transparent;
+  border-left: none;
+  border-right: none;
+}
+#header .mobile-menu ul li a:hover {
+  border: 1px solid #2e6da4;
+  border-left: none;
+  border-right: none;
+  background: #161719;
 }
 #home .home-hero .container {
   max-width: 970px;
@@ -6866,44 +6921,4 @@ body {
 }
 body.show-mobile-menu .mobile-menu {
   display: block;
-}
-.mobile-menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: #0a0b0b;
-  display: none;
-}
-.mobile-menu .mobile-nav-btn {
-  padding: 5px 10px;
-  position: absolute;
-  top: 29px;
-  right: 16px;
-  font-size: 18px;
-}
-.mobile-menu ul {
-  position: relative;
-  top: 12%;
-}
-.mobile-menu ul li a {
-  color: white;
-  display: block;
-  width: 100%;
-  text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
-  border-radius: 0;
-  text-decoration: none;
-  background: #0a0b0b;
-  border: 1px solid transparent;
-  border-left: none;
-  border-right: none;
-}
-.mobile-menu ul li a:hover {
-  border: 1px solid #2e6da4;
-  border-left: none;
-  border-right: none;
-  background: #161719;
 }
