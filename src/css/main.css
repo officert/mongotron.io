@@ -6809,11 +6809,52 @@ button.close {
   border-radius: 20px;
   background: none;
 }
+#home .home-hero .container {
+  max-width: 970px;
+  margin: 0 auto;
+}
+#home .home-hero .banner {
+  padding: 60px 0;
+}
+#home .home-hero .banner h2 {
+  font-size: 36px;
+  line-height: 1.4;
+}
+#home .home-hero .screen-shot {
+  margin-bottom: 40px;
+}
+#home .home-hero .screen-shot img {
+  -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.6);
+}
+#home .home-hero .download {
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+#home .home-hero .download .btn {
+  background: transparent;
+  padding: 10px 70px;
+}
+@media (max-width: 480px) {
+  #home .home-hero .download .btn {
+    width: 100%;
+  }
+  #home .home-hero .download .btn:first-child {
+    margin-bottom: 15px;
+  }
+}
+#home .home-hero .download .btn:first-child {
+  margin-right: 15px;
+}
 /* --------------------------------- */
 body {
   overflow: auto !important;
   font-family: 'Avenir';
   color: #ccced2;
+  background-repeat: repeat-x;
+  background-image: -webkit-linear-gradient(-20deg, #183854, #161719);
+  background-image: -o-linear-gradient(-20deg, #183854, #161719);
+  background-image: linear-gradient(-20deg, #183854, #161719);
 }
 body.show-mobile-menu .mobile-menu {
   display: block;
@@ -6857,49 +6898,6 @@ body.show-mobile-menu .mobile-menu {
   border-left: none;
   border-right: none;
   background: #161719;
-}
-.top-container {
-  background-repeat: repeat-x;
-  background-image: -webkit-linear-gradient(-20deg, #183854, #161719);
-  background-image: -o-linear-gradient(-20deg, #183854, #161719);
-  background-image: linear-gradient(-20deg, #183854, #161719);
-}
-.top-container .container {
-  max-width: 970px;
-  margin: 0 auto;
-}
-.top-container .banner {
-  padding: 60px 0;
-}
-.top-container .banner h2 {
-  font-size: 36px;
-  line-height: 1.4;
-}
-.top-container .screen-shot {
-  margin-bottom: 40px;
-}
-.top-container .screen-shot img {
-  -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.6);
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.6);
-}
-.top-container .download {
-  padding-top: 40px;
-  padding-bottom: 80px;
-}
-.top-container .download .btn {
-  background: transparent;
-  padding: 10px 70px;
-}
-@media (max-width: 480px) {
-  .top-container .download .btn {
-    width: 100%;
-  }
-  .top-container .download .btn:first-child {
-    margin-bottom: 15px;
-  }
-}
-.top-container .download .btn:first-child {
-  margin-right: 15px;
 }
 .bottom-container {
   background: #161719;
