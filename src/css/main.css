@@ -7301,6 +7301,7 @@ body {
   overflow: auto !important;
   font-family: 'Avenir';
   color: #ccced2;
+  background: #161719;
   background-repeat: repeat-x;
   background-image: -webkit-linear-gradient(-20deg, #183854, #161719);
   background-image: -o-linear-gradient(-20deg, #183854, #161719);

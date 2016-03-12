@@ -1,16 +1,15 @@
 @import '../bower_components/bootstrap/less/bootstrap.less';
 @import '../bower_components/simple-css-animation/animations.less';
-
 @import 'appVariables.less';
 @import 'appFonts.less';
 @import 'appUtils.less';
 @import 'appComponents.less';
-
 /* --------------------------------- */
 body {
   overflow: auto !important;
   .font-family-regular;
   color: #ccced2;
+  background: @gray;
   #gradient > .directional(darken(@blue, 20%), @gray, -20deg);
   &.show-mobile-menu {
     .mobile-menu {
