@@ -3,6 +3,7 @@
 @import 'appVariables.less';
 @import 'appFonts.less';
 @import 'appUtils.less';
+@import 'appComponents.less';
 
 /* --------------------------------- */
 body {
@@ -57,109 +58,45 @@ body {
     }
   }
 }
-#producthunt {
-  display: none;
-  background: #da552f;
-  border-top: 3px solid white;
-  border-bottom: 2px solid white;
-  .container {
-    max-width: 970px;
-    margin: 0 auto;
-  }
-  img {
-    max-height: 200px;
-    margin: 0 auto;
-  }
-  .text {
-    padding-top: 40px;
-    color: white;
-    h2 {
-      margin-bottom: 20px;
-    }
-    .cta {
-      margin-top: 16px;
-      i {
-        font-size: 20px;
-        margin-right: 5px;
-      }
-      span {
-        position: relative;
-        top: -1px;
-      }
-    }
-  }
-}
+
+// #producthunt {
+//   display: none;
+//   background: #da552f;
+//   border-top: 3px solid white;
+//   border-bottom: 2px solid white;
+//   .container {
+//     max-width: 970px;
+//     margin: 0 auto;
+//   }
+//   img {
+//     max-height: 200px;
+//     margin: 0 auto;
+//   }
+//   .text {
+//     padding-top: 40px;
+//     color: white;
+//     h2 {
+//       margin-bottom: 20px;
+//     }
+//     .cta {
+//       margin-top: 16px;
+//       i {
+//         font-size: 20px;
+//         margin-right: 5px;
+//       }
+//       span {
+//         position: relative;
+//         top: -1px;
+//       }
+//     }
+//   }
+// }
+
 .top-container {
   #gradient > .directional(darken(@blue, 20%), @gray, -20deg);
   .container {
     max-width: 970px;
     margin: 0 auto;
-  }
-  #header {
-    padding: 30px 0 0;
-    border-bottom: 1px solid #393939;
-    position: relative;
-    .header-inner {
-      border-bottom: 1px solid #000;
-    }
-    .logo {
-      position: relative;
-      top: -10px;
-      margin: 0;
-      a {
-        &:hover {
-          text-decoration: none;
-        }
-      }
-      img {
-        height: 50px;
-      }
-      span {
-        color: white;
-        font-size: 18px;
-        text-transform: uppercase;
-        font-weight: bold;
-        position: relative;
-
-        // left: 0;
-        top: -5px;
-
-        // visibility: hidden;
-      }
-    }
-    .main-nav {
-      .mobile-nav-btn {
-        display: none;
-        padding: 5px 10px;
-      }
-      @media (max-width: 560px) {
-        .mobile-nav-btn {
-          display: block;
-        }
-        ul {
-          display: none;
-        }
-      }
-      ul {
-        list-style: none;
-        li {
-          float: left;
-          margin-left: 20px;
-          a {
-            padding: 5px 10px;
-            color: white;
-            line-height: 1.5;
-            position: relative;
-            top: 4px;
-            &.btn {
-              top: 0;
-              border-radius: 20px;
-              background: none;
-            }
-          }
-        }
-      }
-    }
   }
   .banner {
     padding: 60px 0;
@@ -192,14 +129,7 @@ body {
     }
   }
 }
-.middle-container {
-  min-height: 200px;
-  #gradient > .directional(darken(@blue, 70%), @gray);
-  .container {
-    max-width: 970px;
-    margin: 0 auto;
-  }
-}
+
 .bottom-container {
   background: #161719;
   padding: 20px 0;
