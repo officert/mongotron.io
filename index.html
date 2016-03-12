@@ -9,93 +9,17 @@
   <title>Mongotron - Cross platform MongoDB management</title>
   <meta name="description" content="Mongotron is a new GUI for Mongo DB built using Electron and Angular JS">
 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./src/css/main.css" />
   <link rel="shortcut icon" type="image/png" href="./src/images/favicon.ico" />
 </head>
 
 <body>
-  <!-- <div id="producthunt">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-4">
-          <p class="center">
-            <img class="img-responsive" src="./src/images/producthunt.png" alt="Product Hunt">
-          </p>
-        </div>
-        <div class="col-sm-8 text">
-          <h2 class="center">Welcome Product Hunters!</h2>
-          <p class="center">
-            Interested in contributing to our open-source project?
-          </p>
-          <p class="center">
-            <a href="https://github.com/officert/mongotron" class="cta btn btn-default">
-              <i class="fa fa-github"></i>
-              <span>Check us out on github!</span>
-            </a>
-          </p>
-        </div>
-      </div>
-    </div>
-  </div> -->
-  <div class="top-container">
-    <header ng-controller="headerCtrl" ng-include="'src/js/views/header.html'">
-    </header>
-    <div class="container">
-      <div class="banner">
-        <h2 class="center">
-          Cross platform MongoDB management
-        </h2>
-        <p class="center">
-          Open Source, built using Electron and Angular JS
-        </p>
-      </div>
-      <div class="screen-shot">
-        <img src="./src/images/screenshot.png" class="img-responsive">
-      </div>
-      <div class="download">
-        <p class="center">
-          <a href="https://github.com/officert/mongotron/releases" class="btn btn-primary">
-            Download
-          </a>
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="bottom-container">
-    <div class="container">
-      <footer id="footer">
-        <div id="disqus_thread"></div>
-        <script>
-          (function() { // DON'T EDIT BELOW THIS LINE
-            var d = document,
-              s = d.createElement('script');
-
-            s.src = '//mongotron.disqus.com/embed.js';
-
-            s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
-          })();
-        </script>
-        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-      </footer>
-    </div>
-  </div>
-  <div class="mobile-menu">
-    <a id="hideMobileMenuBtn" href="#" class="mobile-nav-btn">
-      <i class="fa fa-times"></i>
-    </a>
-    <ul>
-      <li>
-        <a href="https://github.com/officert/mongotron#quick-start">Getting Started</a>
-      </li>
-      <li>
-        <a href="https://github.com/officert/mongotron">Github</a>
-      </li>
-      <li>
-        <a href="https://github.com/officert/mongotron">Download</a>
-      </li>
-    </ul>
-  </div>
+  <header ng-controller="headerCtrl" ng-include="'src/js/views/header.html'">
+  </header>
+  <div ui-view></div>
+  <footer ng-include="'src/js/views/footer.html'">
+  </footer>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>

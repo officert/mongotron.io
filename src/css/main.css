@@ -6724,6 +6724,18 @@ button.close {
     display: none !important;
   }
 }
+@font-face {
+  font-family: 'Avenir';
+  src: url('../fonts/AvenirNextLTPro-Regular.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Avenir Light';
+  src: url('../fonts/AvenirNextLTPro-UltLtCn.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Avenir Bold';
+  src: url('../fonts/AvenirNextLTPro-Bold.otf') format('opentype');
+}
 .font-family-light {
   font-family: 'Avenir Light';
 }
@@ -6780,7 +6792,11 @@ button.close {
 }
 #header .main-nav .mobile-nav-btn {
   display: none;
-  padding: 5px 10px;
+  color: white;
+  font-size: 25px;
+  position: relative;
+  right: 10px;
+  top: -5px;
 }
 @media (max-width: 560px) {
   #header .main-nav .mobile-nav-btn {
@@ -6809,16 +6825,7 @@ button.close {
   border-radius: 20px;
   background: none;
 }
-/* --------------------------------- */
-body {
-  overflow: auto !important;
-  font-family: 'Avenir';
-  color: #ccced2;
-}
-body.show-mobile-menu .mobile-menu {
-  display: block;
-}
-.mobile-menu {
+#header .mobile-menu {
   position: fixed;
   top: 0;
   left: 0;
@@ -6827,18 +6834,29 @@ body.show-mobile-menu .mobile-menu {
   background: #0a0b0b;
   display: none;
 }
-.mobile-menu .mobile-nav-btn {
+#header .mobile-menu.active {
+  display: block;
+}
+@media (min-width: 560px) {
+  #header .mobile-menu {
+    display: none !important;
+  }
+}
+#header .mobile-menu .mobile-nav-btn {
   padding: 5px 10px;
   position: absolute;
-  top: 29px;
-  right: 16px;
-  font-size: 18px;
+  top: 16px;
+  right: 15px;
+  font-size: 30px;
 }
-.mobile-menu ul {
+#header .mobile-menu ul {
   position: relative;
   top: 12%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-.mobile-menu ul li a {
+#header .mobile-menu ul li a {
   color: white;
   display: block;
   width: 100%;
@@ -6852,60 +6870,67 @@ body.show-mobile-menu .mobile-menu {
   border-left: none;
   border-right: none;
 }
-.mobile-menu ul li a:hover {
+#header .mobile-menu ul li a:hover {
   border: 1px solid #2e6da4;
   border-left: none;
   border-right: none;
   background: #161719;
 }
-.top-container {
+#home .home-hero .container {
+  max-width: 970px;
+  margin: 0 auto;
+}
+#home .home-hero .banner {
+  padding: 60px 0;
+}
+#home .home-hero .banner h2 {
+  font-size: 36px;
+  line-height: 1.4;
+}
+#home .home-hero .screen-shot {
+  margin-bottom: 40px;
+}
+#home .home-hero .screen-shot img {
+  -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.6);
+}
+#home .home-hero .download {
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+#home .home-hero .download .btn {
+  background: transparent;
+  padding: 10px 70px;
+}
+@media (max-width: 480px) {
+  #home .home-hero .download .btn {
+    width: 100%;
+  }
+  #home .home-hero .download .btn:first-child {
+    margin-bottom: 15px;
+  }
+}
+#home .home-hero .download .btn:first-child {
+  margin-right: 15px;
+}
+#footer {
+  background: #161719;
+  padding: 20px 0;
+}
+#footer .container {
+  max-width: 970px;
+  margin: 0 auto;
+}
+/* --------------------------------- */
+body {
+  overflow: auto !important;
+  font-family: 'Avenir';
+  color: #ccced2;
   background-repeat: repeat-x;
   background-image: -webkit-linear-gradient(-20deg, #183854, #161719);
   background-image: -o-linear-gradient(-20deg, #183854, #161719);
   background-image: linear-gradient(-20deg, #183854, #161719);
 }
-.top-container .container {
-  max-width: 970px;
-  margin: 0 auto;
-}
-.top-container .banner {
-  padding: 60px 0;
-}
-.top-container .banner h2 {
-  font-size: 36px;
-  line-height: 1.4;
-}
-.top-container .screen-shot {
-  margin-bottom: 40px;
-}
-.top-container .screen-shot img {
-  -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.6);
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.6);
-}
-.top-container .download {
-  padding-top: 40px;
-  padding-bottom: 80px;
-}
-.top-container .download .btn {
-  background: transparent;
-  padding: 10px 70px;
-}
-@media (max-width: 480px) {
-  .top-container .download .btn {
-    width: 100%;
-  }
-  .top-container .download .btn:first-child {
-    margin-bottom: 15px;
-  }
-}
-.top-container .download .btn:first-child {
-  margin-right: 15px;
-}
-.bottom-container {
-  background: #161719;
-  padding: 20px 0;
-}
-.bottom-container .container {
-  max-width: 970px;
-  margin: 0 auto;
+body.show-mobile-menu .mobile-menu {
+  display: block;
 }

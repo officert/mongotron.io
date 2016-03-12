@@ -1,0 +1,38 @@
+#home {
+  .home-hero {
+    .container {
+      max-width: 970px;
+      margin: 0 auto;
+    }
+    .banner {
+      padding: 60px 0;
+      h2 {
+        font-size: 36px;
+        line-height: 1.4;
+      }
+    }
+    .screen-shot {
+      margin-bottom: 40px;
+      img {
+        .box-shadow(0 0 20px 0 rgba(0, 0, 0, .6));
+      }
+    }
+    .download {
+      padding-top: 40px;
+      padding-bottom: 80px;
+      .btn {
+        background: transparent;
+        padding: 10px 70px;
+        @media (max-width: @screen-xs) {
+          width: 100%;
+          &:first-child {
+            margin-bottom: 15px;
+          }
+        }
+        &:first-child {
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+}
