@@ -9,5 +9,8 @@
   "eqeqeq": true,
   "freeze": true,
   "strict": false,
-  "predef": []
+  "predef": [
+    "angular",
+    "alert"
+  ]
 }
