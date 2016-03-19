@@ -7365,9 +7365,16 @@ pre {
   width: 100%;
   background: #1a1a1a;
 }
+#home .features-wrapper .features .feature {
+  margin-bottom: 80px;
+}
 #home .features-wrapper .features .feature .name {
   font-weight: bold;
   font-size: 30px;
+  margin-bottom: 50px;
+}
+#home .features-wrapper .features .feature .desc {
+  line-height: 1.7;
 }
 #home .features-wrapper .features .feature .feature-image img {
   margin: 0 auto;
@@ -7383,6 +7390,7 @@ body {
   font-family: 'Avenir';
   color: #ccced2;
   background: #161719;
+  line-height: 1.45;
   background-repeat: repeat-x;
   background-image: -webkit-linear-gradient(-20deg, #183854, #161719);
   background-image: -o-linear-gradient(-20deg, #183854, #161719);
