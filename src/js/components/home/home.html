@@ -20,20 +20,23 @@
         </p>
       </div>
     </div>
-    <div id="home-features" class="features-wrapper container">
-      <h2 class="features-header center">Features</h2>
-      <div class="features">
-        <div class="feature row" ng-repeat="feature in features">
-          <div class="col-sm-7 feature-image">
-            <img class="img-responsive" ng-src="{{ feature.imageUrl }}">
-          </div>
-          <div class="col-sm-5">
-            <h4 class="name">
-              {{ feature.name }}
-            </h4>
-            <p class="desc">
-              {{ feature.description }}
-            </p>
+    <div id="home-features" class="features-wrapper">
+      <div class="container">
+        <h2 class="features-header center">Features</h2>
+        <div class="underline"></div>
+        <div class="features">
+          <div class="feature row" ng-repeat="feature in features">
+            <div class="col-sm-7 feature-image">
+              <img class="img-responsive" ng-src="{{ feature.imageUrl }}">
+            </div>
+            <div class="col-sm-5">
+              <h4 class="name">
+                {{ feature.name }}
+              </h4>
+              <p class="desc">
+                {{ feature.description }}
+              </p>
+            </div>
           </div>
         </div>
       </div>

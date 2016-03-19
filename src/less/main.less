@@ -1,5 +1,6 @@
 @import '../bower_components/bootstrap/less/bootstrap.less';
 @import '../bower_components/simple-css-animation/animations.less';
+@import 'vendor/bootstrap-ems.less';
 @import 'appVariables.less';
 @import 'appFonts.less';
 @import 'appUtils.less';
@@ -15,5 +16,12 @@ body {
     .mobile-menu {
       display: block;
     }
+  }
+}
+a {
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    text-decoration: none;
   }
 }
