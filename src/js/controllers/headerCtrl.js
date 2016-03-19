@@ -5,7 +5,7 @@ angular.module('mongotronApp').controller('headerCtrl', [
     $scope.scrollToFeatures = function($event) {
       if ($event) $event.preventDefault();
 
-      utilsService.scrollTo('home-features', -50);
+      utilsService.scrollTo('home-features', 0);
     };
   }
 ]);
