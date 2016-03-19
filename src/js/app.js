@@ -1,8 +1,9 @@
 angular.module('mongotronApp', [
-  'ui.router'
+  'ui.router',
+  'ngSanitize',
+  'duScroll',
 ]);
 
 angular.module('mongotronApp').run([
-  function() {
-  }
+  function() {}
 ]);
